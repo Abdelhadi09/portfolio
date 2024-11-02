@@ -1,0 +1,518 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header >.container{
+    display: flex;
+    width: 90%;
+   align-items: baseline;
+   justify-content: space-between;
+   font-family: "Sora", sans-serif;
+   color: black;
+}
+.logo > h5 {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Sora", sans-serif;
+}
+.header-btn{
+    background-color: black;
+    color: white;
+    font-family: "Sora", sans-serif;
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    
+}
+.taskbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 33%;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Sora", sans-serif;
+}
+.taskbar > a{
+    text-decoration: none;
+    color: black;
+
+
+}
+.gone{
+    display: none;
+    transition: 400ms ease;
+}
+@media (max-width: 768px) {
+    .taskbar {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+    .active {
+        display: flex;
+        transition: 400ms ease;
+  }
+.humburger{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+}
+
+ .header-btn{
+     display: none;
+ } 
+ .bar{
+     display: flex;
+ }
+ .hero-section >.container{
+     display: flex !important;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    
+     width: 90%;
+ }
+ .hero{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ .banner{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     position: relative;
+     top : 80px;
+ 
+ }
+}
+.humburger{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+.bar{
+    
+    flex-direction: column;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    
+  }
+.taskbar > a:hover{
+    text-decoration: underline;
+    transition: 400ms ease in;
+}
+.hero-section >.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 376px  auto ;
+    height: 630px;
+    width: 90%;
+}
+.hero{
+    display: grid;
+    grid-template-rows: span 2;
+}
+.banner{
+display: flex;
+align-items: center; 
+justify-content: center;
+flex-direction: column;
+position: relative;
+top : 80px;
+
+}
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner > h1{
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 200;
+    font-family: "Sora", sans-serif;
+    margin: 0;
+}
+.banner-span{
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    font-family: "Sora", sans-serif;
+}
+.outline{
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  color: white;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 200px;
+}
+.socials > button{
+    background-color: white;
+    border: solid 1px black;
+    padding: 5px 10px;
+    width: 56px;
+    height: 56px;
+}
+.skills > .container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.skill-row1{
+    position: relative;
+    left : 60px;
+    font-size: 24px;
+    line-height: 56px;
+    font-weight: 700;
+    font-family: "Sora", sans-serif;
+}
+.skill-row2 {
+    position: relative;
+    left : 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill-item{
+    width: 186px;
+    height: 186px;
+    border: solid 1px black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Sora", sans-serif;
+}
+.skill-item:hover{
+    box-shadow: -9px 9px 17px 0px rgba(122,119,119,0.75);
+    -webkit-box-shadow: -9px 9px 17px 0px rgba(122,119,119,0.75);
+    -moz-box-shadow: -9px 9px 17px 0px rgba(122,119,119,0.75);
+    transition: 400ms ease;
+}
+.experience {
+    background-color: black;
+    color: white;
+    font-family: "Sora", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.experience > .container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    padding-top: 50px;
+}
+.exp-row1{
+    font-size: 24px;
+    line-height: 56px;
+    font-weight: 700;
+    font-family: "Sora", sans-serif;
+    margin-bottom: 20px;
+}
+.exp-item{
+    border: solid 1px gray;
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 10px;
+
+}
+.exp-item:hover{
+    background-color: gray;
+    color: white;
+    transition: 400ms ease;
+}
+
+.exp-row2{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 25px;
+}
+.exp-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+.about > .container{
+    padding-top: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-text{
+    padding-left: 50px;
+}
+#about{
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    position: relative;
+    bottom: 20px;
+}
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.project > .container{
+    padding-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.image1{
+    float: left;
+}
+.image2{
+    float: right;
+    margin-left: 150px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 50px;
+    font-family: "Sora", sans-serif;
+    color: gray;
+}
+.details2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    font-family: "Sora", sans-serif;
+color: gray;
+}
+#projects{
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    position: relative;
+    bottom: 20px;
+    margin-bottom: 20px;
+}
+.details h3, .details2 h3{
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: white;
+}
+.details h1, .details2 h1{
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+    color: white;
+}
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial > .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 150px;
+    padding-top: 50px;
+}
+.testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.card{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: -9px 9px 17px 0px rgba(122,119,119,0.75);
+-webkit-box-shadow: -9px 9px 17px 0px rgba(122,119,119,0.75);
+-moz-box-shadow: -9px 9px 17px 0px rgba(122,119,119,0.75);
+}
+.card1{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: -9px 9px 17px 0px rgba(122,119,119,0.75);
+-webkit-box-shadow: -9px 9px 17px 0px rgba(122,119,119,0.75);
+-moz-box-shadow: -9px 9px 17px 0px rgba(122,119,119,0.75);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: black;
+    color: white;
+}
+#testimonials{
+    font-family: "Sora", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    position: relative;
+    bottom: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact > .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin-bottom: 120px;
+    
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+   
+}
+.form-group > input, .form-group > textarea{
+    border: none;
+    border-bottom: solid 1px black;
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+input:focus::placeholder, textarea:focus::placeholder{
+    outline: none;
+    color: transparent;
+    transition: 200ms ease;
+}
+.contact-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-btn > button{
+   background-color: black;
+   color: white;
+   font-family: "Sora", sans-serif;
+   padding: 5px 10px;
+   font-size: 15px;
+   line-height: 24px;
+   font-weight: 400;
+   border: none;
+   height: 56px;
+}
+.contact-socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+.contact-socials > button{
+    background-color: white;
+    border: solid 1px black;
+    padding: 5px 10px;
+    width: 56px;
+    height: 56px;
+
+}
+.contact-form{
+    padding: 30px;
+}
+.contact-info{
+    padding: 50px 40px 40px 40px; 
+    font-family: "Sora", sans-serif;
+}
+.contact-info > h1{
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 10px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+   
+}
+.footer > .container{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo > h5 {
+    display: inline-block;
+}
